@@ -10,7 +10,7 @@ const Brand = () => {
         <>
             <div className="container">
                 <div className="brand__div">
-                    <div className="d-flex flex-row  mb-lg-0 mb-md-4 align-items-center  justify-content-center   ">
+                    <div className="d-flex flex-row  mb-lg-0 mb-md-4 align-items-center  justify-content-center  brand__div-inner">
                         <img src={homeimg} className='' alt="" />
                         <img src={stylevinta} className='' alt="" />
                         <img src={brandimg} className='' alt="" />

@@ -53,14 +53,14 @@ const Footer = () => {
                                         </div>
                                         <div className="col-lg-3 col-xl">
                                             <div className="fs-5 fw-600 text-white">Project Inquiry </div>
-                                            <Link to="/" className='text-white text-decoration-none d-block small mt-4'>
+                                            <Link to="/" className='text-white text-decoration-none d-flex align-items-center gap-1 small mt-4'>
                                                 <img src={viber} className='img-fluid me-1' alt="" />
                                                 <span>
                                                     9876543210
                                                 </span>
 
                                             </Link>
-                                            <Link to="/" className='text-white text-decoration-none d-block small mt-2'>
+                                            <Link to="/" className='text-white text-decoration-none d-flex align-items-center gap-1 small mt-3'>
                                                 <img src={mail} className='img-fluid me-1' alt="" />
                                                 <span>
                                                     info@roomup.in
