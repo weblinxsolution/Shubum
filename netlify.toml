@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish="path-to-react-app/build"
+  base = "path-to-react-app"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
