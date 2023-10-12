@@ -10,7 +10,7 @@ const VisualSection = (props) => {
                 <div className={props.bgadd == 1 ? "container py-lg-5" : "container"} >
                     <div className={props.flexrow ? `row mx-0 px-lg-1 mx-lg-1 align-items-center flex-lg-row-reverse gap-lg-0 gap-5` : `row mx-0 px-lg-1 mx-lg-1 align-items-center gap-lg-0 gap-5`}>
 
-                        <div className={props.flexrow ? "col-lg-6 col-xxl-6" : props.flexrow2 ? "col-lg-6 col-xxl-6" : "col-lg-6 col-xxl-5"}>
+                        <div className={props.flexrow ? "col-lg-6 col-xxl-6 overflow-hidden" : props.flexrow2 ? "col-lg-6 col-xxl-6 overflow-hidden" : "col-lg-6 col-xxl-5 overflow-hidden"}>
                             {props.flexrow | props.flexrow2 ?
                                 <span>
                                     <h2 className="text-dark h1responsive fw-800 d-lg-block d-xxl-none ">
@@ -34,8 +34,8 @@ const VisualSection = (props) => {
                             }
 
                             {/* {:} */}
-                            <div className="d-flex align-items-center mt-3 gap-1">
-                                <div>
+                            <div className="d-flex align-items-start mt-3 gap-1 mt-res-mob">
+                                <div className='check-mark'>
                                     <img src={checkmark} alt="" />
                                 </div>
                                 <div>
@@ -44,8 +44,8 @@ const VisualSection = (props) => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center gap-1 mt-2">
-                                <div>
+                            <div className="d-flex align-items-start gap-1 mt-2 mt-res-mob">
+                                <div className='check-mark'>
                                     <img src={checkmark} alt="" />
                                 </div>
                                 <div>
@@ -55,7 +55,7 @@ const VisualSection = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className={props.flexrow ? "col-lg-6 col-xxl-6" : props.flexrow2 ? "col-lg-6 col-xxl-6" : "col-lg-6 col-xxl-7"}>
+                        <div className={props.flexrow ? "col-lg-6 col-xxl-6 overflow-hidden" : props.flexrow2 ? "col-lg-6 col-xxl-6 overflow-hidden" : "col-lg-6 col-xxl-7 overflow-hidden"}>
                             <div className={props.flexrow | props.flexrow2 ? "visbg2" : "visbg"} style={{ background: ` url(${visbg})` }}>
                                 <img src={props.sectionimg} className='w-100' alt="" />
 

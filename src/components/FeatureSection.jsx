@@ -15,7 +15,7 @@ const FeatureSection = () => {
                             <h1 className="text-center h1responsive text-capitalize fw-800">
                                 Features you would crave for!
                             </h1>
-                            <p className="mb-0 mt-3 text-center">
+                            <p className="mb-0 mt-3 text-center moblie-p-tag">
                                 By working with India's top 20,000+ retailers, the VisualEz app has all
                                 <br className="d-lg-block d-none" />
                                 that you require. See it yourself.

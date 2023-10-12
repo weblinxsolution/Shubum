@@ -45,7 +45,7 @@ const PreviewBanner = () => {
                             <div className="col-lg-5 col-xxl-5">
                                 <div className="d-flex align-items-start  gap-2 gap-lg-0 flex-lg-column justify-content-lg-start">
                                     <img src={img360} className='img-fluid' alt="" />
-                                    <div>
+                                    <div className='text-align-res'>
                                         <h1 className='text-white fw-700 mt-1 font__responsive'>
                                             Product Previews
 

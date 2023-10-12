@@ -49,6 +49,7 @@ const Application2 = () => {
         <>
             <div className="container-lg bg__responsive pt-lg-0 pt-4 pb-5 px_0 bg mt-5 mb-5">
                 <div className="row mx-0 justify-content-center">
+                    <img src={application} className='w-100 bg__app d-lg-block d-none' alt="" />
                     <div className="col-lg-10 col-xxl-9">
                         <div className="row mx-0">
                             <div className="col-lg-12 px-0">
@@ -56,7 +57,6 @@ const Application2 = () => {
                                 <h5 className="d-lg-none fw-800 d-block text-lg-start text-center mb-4" >
                                     Enhance Your Product Marketing
                                 </h5>
-                                <img src={application} className='w-100 bg__app d-lg-block d-none' alt="" />
 
                                 <div className="row mx-0 align-items-center gap-lg-0 gap-5 mt-lg-5">
                                     <div className="col-lg-5">

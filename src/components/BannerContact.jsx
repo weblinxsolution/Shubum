@@ -4,7 +4,7 @@ import Whatsapp from '../assets/Whatsapp.png'
 const BannerContact = () => {
     return (
         <>
-            <div className="container">
+            <div className="wrapper">
                 <section className='bg__contact '
                     style={{ backgroundImage: `url(${ContactBanner})` }}>
                     <div>

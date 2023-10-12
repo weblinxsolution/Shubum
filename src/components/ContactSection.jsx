@@ -7,7 +7,7 @@ const ContactSection = () => {
             <div className="my-5">
                 <div className="container ">
                     <div className="row mx-0 justify-content-center">
-                        <div className="col-lg-10">
+                        <div className="col-lg-12">
                             <div className="row mx-0">
                                 <div className="col-lg-7">
                                     <h2 className="fw-700">Get in Touch With us</h2>

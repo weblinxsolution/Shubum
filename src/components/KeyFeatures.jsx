@@ -10,7 +10,7 @@ const KeyFeatures = () => {
                     Key Features
                 </h2>
                 <div className="row mx-0 justify-content-center">
-                    <div className="col-lg-10 col-xxl-9 px-0">
+                    <div className="col-lg-12 col-xxl-12 px-0">
                         <div className="row mx-0 mt-4 gap-lg-0 gap-4">
                             <div className="col-lg-4">
                                 <div className="keyfeature__card">

@@ -59,7 +59,7 @@ const BannerVisualizer = () => {
                                         <input type="text" className='nofocus border-0 bg-transparent ' placeholder='Phone Number' />
                                     </div>
                                 </div>
-                                <div className="mt-4 text-lg-start text-center">
+                                <div className="mt-4 text-lg-start text-center mobile-res-btn">
                                     <Button style0={true} content="Get Free Trial" />
 
                                 </div>

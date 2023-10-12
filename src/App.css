@@ -581,10 +581,16 @@ body {
 
 
 
-
+.lovedbrands__div {
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .keyfeature__card {
+  height: 200px;
   border-radius: 20px !important;
   border: 1px solid #E9F4FF !important;
   padding: 30px;
@@ -709,7 +715,8 @@ body {
   padding: 100px 0px;
   align-items: center;
 }
-.visbg2{
+
+.visbg2 {
   margin: 5rem 0;
 }
 
@@ -730,7 +737,18 @@ body {
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1367px) {
+  .lovedbrands__div {
+    width: 160px;
+  }
+
+}
+
+@media (max-width: 1242px) {
+  .lovedbrands__div {
+    width: 145px;
+  }
+
   .inputcontact {
     width: 400px !important;
   }
@@ -1063,7 +1081,7 @@ body {
   }
 
   .h1responsive {
-    font-size: 22px;
+    font-size: 20px !important;
   }
 
   .bg__responsive {
@@ -1412,7 +1430,55 @@ body {
 
 }
 
-@media (max-width:375px) {
+@media (max-width:390px) {
+  .py-5{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .visbg{
+    background-size: 100% 100% !important;
+    margin: .5rem 0;
+  }
+  .visbg2{
+    background-size: 100% 100% !important;
+    margin: .5rem 0;
+  }
+  .mobile-res-btn button{
+    padding: 16px 100px !important;
+  }
+  .mt-res-mob {
+    margin-top: 1rem !important;
+  }
+
+  .moblie-p-tag {
+    font-size: 14px !important;
+  }
+
+  .feature__card p:nth-child(2) {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+  }
+
+  .feature__card p:nth-child(3) {
+    font-size: 14px !important;
+  }
+
+  .check-mark img {
+    width: 15px;
+  }
+
+  .text-align-res {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  .fs-5 {
+    font-size: 14px !important;
+  }
+
   .carousel-caption {
     bottom: -5% !important;
     left: 2% !important;
