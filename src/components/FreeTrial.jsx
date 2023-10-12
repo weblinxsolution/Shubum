@@ -5,7 +5,7 @@ const FreeTrial = () => {
     return (
         <>
             <section className='container-md px_0 mb-lg-5'>
-                <div className="row mx-0 px-lg-5 mx-lg-3 px_0">
+                <div className="row mx-0 px_0">
                     <div className="col-lg-12 mt-5 px_0">
                         <div className="bg__trial">
                             <div className="row mx-0 align-items-center gap-lg-0 gap-4">

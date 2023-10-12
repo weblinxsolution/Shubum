@@ -22,7 +22,7 @@ const FeatureSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="row mx-0 justify-content-center mt-5 gap-lg-0 gap-4 px-lg-5 mx-lg-3">
+                    <div className="row mx-0 justify-content-center mt-5 gap-lg-0 gap-4 px-lg-1 mx-lg-2">
                         <div className="col-lg-4">
                             <FeatureCard imgsrc={Featureimg1} title="See Your Own Tiles" para="Provide us the PDF catalogs or take a photo of your designer tiles through our app." />
                         </div>
@@ -31,7 +31,7 @@ const FeatureSection = () => {
                         </div>
 
                     </div>
-                    <div className="row mx-0 justify-content-center mt-4 gap-lg-0 gap-4 px-lg-5 mx-lg-3">
+                    <div className="row mx-0 justify-content-center mt-4 gap-lg-0 gap-4 px-lg-1 mx-lg-2">
                         <div className="col-lg-4">
                             <FeatureCard imgsrc={Featureimg3} title="Tile Cutting & Rotation"
                                 para='Cut your tiles into any size (12" I 8" etc.), rotate them or do the book match. Choice is yours!' />

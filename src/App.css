@@ -491,7 +491,7 @@ body {
 }
 
 .visbg {
-  background-size: 100% 100% !important;
+  background-size: 115% 115% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   transform: scale(1.2);
@@ -499,7 +499,7 @@ body {
 }
 
 .visbg2 {
-  background-size: 115% 115% !important;
+  background-size: 120% 120% !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 
@@ -709,7 +709,9 @@ body {
   padding: 100px 0px;
   align-items: center;
 }
-
+.visbg2{
+  margin: 5rem 0;
+}
 
 
 @media (min-width: 1400px) {
@@ -722,7 +724,7 @@ body {
 
 @media (min-width: 1500px) {
   .bg__concept {
-    width: 90%;
+    width: 95.5%;
     margin-left: auto;
   }
 

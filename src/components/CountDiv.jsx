@@ -8,7 +8,7 @@ const CountDiv = () => {
         <>
             <section className='container mt-5 pt-lg-4' >
                 <div className="countdiv">
-                    <div className="row mx-0 px-lg-5 mx-lg-4 justify-content-center  ">
+                    <div className="row mx-0 px-lg-2 mx-lg-3 justify-content-center  ">
                         <div className="col-lg-12 bg__gradient2 ">
                             <div className="row mx-0 justify-content-lg-around justify-content-center gap-lg-0 gap-5">
                                 <div className="col-lg-3 text-center">

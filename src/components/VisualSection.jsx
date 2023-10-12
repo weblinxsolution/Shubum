@@ -6,9 +6,9 @@ const VisualSection = (props) => {
 
     return (
         <>
-            <section className={props.bgadd == 1 ? 'bg__white3desk mt-4 py-4 overflow-hidden' : props.bgaddresponsive == 1 ? 'bg__responsive mt-4 py-4 overflow-hidden' : 'mt-4 overflow-hidden'}>
+            <section className={props.bgadd == 1 ? 'bg__white3desk mt-4 py-5 overflow-hidden' : props.bgaddresponsive == 1 ? 'bg__responsive mt-4 py-5 overflow' : 'mt-4 overflow-hidden'}>
                 <div className={props.bgadd == 1 ? "container py-lg-5" : "container"} >
-                    <div className={props.flexrow ? `row mx-0 px-lg-5 mx-lg-3 align-items-center flex-lg-row-reverse gap-lg-0 gap-5` : `row mx-0 px-lg-5 mx-lg-3 align-items-center gap-lg-0 gap-5`}>
+                    <div className={props.flexrow ? `row mx-0 px-lg-1 mx-lg-1 align-items-center flex-lg-row-reverse gap-lg-0 gap-5` : `row mx-0 px-lg-1 mx-lg-1 align-items-center gap-lg-0 gap-5`}>
 
                         <div className={props.flexrow ? "col-lg-6 col-xxl-6" : props.flexrow2 ? "col-lg-6 col-xxl-6" : "col-lg-6 col-xxl-5"}>
                             {props.flexrow | props.flexrow2 ?
