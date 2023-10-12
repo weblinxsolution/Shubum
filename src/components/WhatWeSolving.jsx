@@ -8,7 +8,7 @@ const WhatWeSolving = () => {
                     <div className="row mx-0 justify-content-center">
                         <div className="col-xl-11 px_0">
                             <h1 className="text-center fw-800 mt-5">
-                                What Are We Solving
+                                What are we solving
 
                             </h1>
                             <p className="text-center text__color mt-4">

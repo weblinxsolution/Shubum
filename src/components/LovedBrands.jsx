@@ -18,7 +18,7 @@ const LovedBrands = () => {
                 <div className="container mt-4 mt-lg-5 pt-lg-3">
                     <h2 className="text-center text-dark fw-700">Loved By 40+ Brands</h2>
                     <div className="row mx-0 justify-content-center">
-                        <div className="col-lg-12 col-xl-10 col-xxl-9">
+                        <div className="col-lg-12 col-xl-12 col-xxl-10">
                             <div className="d-flex gap-lg-0 gap-3 mt-4 align-items-center justify-content-lg-between justify-content-center flex-wrap">
                                 <div className="lovedbrands__div">
                                     <img src={somany} alt="" />

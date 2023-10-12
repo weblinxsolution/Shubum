@@ -31,7 +31,7 @@ const BannerVisualizer = () => {
                                                 <div>
                                                     <img src={India} alt="" />
                                                 </div>
-                                                <div> +91</div>
+                                                <div className='text-grey-v2 '> +91</div>
 
                                             </div>
                                         </div>
