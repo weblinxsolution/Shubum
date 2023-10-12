@@ -18,7 +18,7 @@ const OurJourney = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1300,
+                breakpoint: 1570,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 3,
@@ -27,7 +27,7 @@ const OurJourney = () => {
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 1245,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 3,

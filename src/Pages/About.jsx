@@ -16,8 +16,6 @@ const About = () => {
             <OurJourney/>
             <WhatWeSolving/>
             <CoreTeam/>
-
-
             <Footer />
         </>
 
