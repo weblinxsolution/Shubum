@@ -54,7 +54,7 @@ const Application2 = () => {
                         <div className="row mx-0">
                             <div className="col-lg-12 px-0">
 
-                                <h5 className="d-lg-none fw-800 d-block text-lg-start text-center mb-4" >
+                                <h5 className="d-lg-none fw-800 d-block text-lg-start text-center mb-4 f-197-res" >
                                     Enhance Your Product Marketing
                                 </h5>
 

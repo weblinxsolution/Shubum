@@ -35,7 +35,6 @@ const PreviewBanner = () => {
     }, []);
     return (
         <>
-
             <section className=' bg__concept  me-0 px_0 mt-5'>
                 <div className=" " style={{
                     // backgroundImage: `linear-gradient(94deg, #3294DB 3.97%, rgba(50, 148, 219, 0.00) 88.85%),url(${qrconcept})`
@@ -43,8 +42,8 @@ const PreviewBanner = () => {
                     <div className="padding__section">
                         <div className="row mx-0">
                             <div className="col-lg-5 col-xxl-5">
-                                <div className="d-flex align-items-start  gap-2 gap-lg-0 flex-lg-column justify-content-lg-start">
-                                    <img src={img360} className='img-fluid' alt="" />
+                                <div className="d-flex align-items-start  gap-2 gap-lg-0 flex-lg-column justify-content-lg-start image-text-center">
+                                    <img src={img360} className='img-fluid image-three-sixty' alt="" />
                                     <div className='text-align-res'>
                                         <h1 className='text-white fw-700 mt-1 font__responsive'>
                                             Product Previews
@@ -84,10 +83,7 @@ const PreviewBanner = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
-
-
         </>
     )
 }

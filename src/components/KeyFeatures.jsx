@@ -13,7 +13,7 @@ const KeyFeatures = () => {
                     <div className="col-lg-12 col-xxl-12 px-0">
                         <div className="row mx-0 mt-4 gap-lg-0 gap-4">
                             <div className="col-lg-4">
-                                <div className="keyfeature__card">
+                                <div className="keyfeature__card mobile-res-text-v2">
                                     <div className="d-flex justify-content-center">
                                         <img src={img8k} alt="" className='img-fluid' />
 
@@ -22,7 +22,7 @@ const KeyFeatures = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4">
-                                <div className="keyfeature__card">
+                                <div className="keyfeature__card mobile-res-text-v2">
                                     <div className="d-flex justify-content-center">
                                         <img src={rocket} alt="" className='img-fluid' />
 
@@ -31,7 +31,7 @@ const KeyFeatures = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4">
-                                <div className="keyfeature__card">
+                                <div className="keyfeature__card mobile-res-text-v2">
                                     <div className="d-flex justify-content-center">
                                         <img src={sofa} alt="" className='img-fluid' />
 
