@@ -56,7 +56,7 @@ const VisualSection = (props) => {
                             </div>
                         </div>
                         <div className={props.flexrow ? "col-lg-6 col-xxl-6 overflow-hidden" : props.flexrow2 ? "col-lg-6 col-xxl-6 overflow-hidden" : "col-lg-6 col-xxl-7 overflow-hidden"}>
-                            <div className={props.flexrow | props.flexrow2 ? "visbg2" : "visbg"} style={{ background: ` url(${visbg})` }}>
+                            <div className={props.flexrow | props.flexrow2 ? "visbg2" : "visbg"} style={{ background: ` url(${visbg})`,backgroundSize:'107% !important' }}>
                                 <img src={props.sectionimg} className='w-100' alt="" />
 
                             </div>
