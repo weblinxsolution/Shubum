@@ -1,1 +1,25 @@
 @import url('https://roomupcss.netlify.app/Dashboard.css');
+.download-img img {
+    width: 22%;
+}
+.visbg {
+    background-size: 95% !important;
+}
+.visbg2{
+    background-size: 95% !important;
+}
+@media(max-width:1527.27px){
+    .mobile-img{
+        height: 140px !important;
+    }
+}
+@media(max-width:1400px){
+    .mobile-img{
+        height: 123px !important;
+    }
+}
+@media(max-width:600px){
+    .download-img img {
+        width: 29%;
+    }
+}

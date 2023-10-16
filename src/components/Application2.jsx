@@ -37,8 +37,8 @@ const Application2 = () => {
                 setImg(imageList[currentIndex]);
                 setStatus(currentIndex + 1);
                 setHideImage(false); // Remove "hide" class after a brief delay
-            }, 500); // Adjust the delay as needed for the transition
-        }, 5000);
+            }, 250); // Adjust the delay as needed for the transition
+        }, 2500);
 
 
         return () => {

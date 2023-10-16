@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import featureimg from '../assets/4slid.png'
+import { Link } from 'react-router-dom'
 const FreeTrial = () => {
     return (
         <>
@@ -14,8 +15,9 @@ const FreeTrial = () => {
                                         See what it’s like to create amazing designs for your customers
                                     </h1>
                                     <div className="mt-4 text-lg-start text-center">
-                                        <Button style4={true} content="Start Your Free Trial" />
-
+                                        <Link to='/Login'>
+                                            <Button style4={true} content="Start Your Free Trial" />
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-5">

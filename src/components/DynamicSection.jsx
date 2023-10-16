@@ -6,6 +6,7 @@ import qrcode from '../assets/qrcode.png'
 import playbutton from '../assets/play.png'
 import Button from './Button'
 import Application from './Application'
+import { Link } from 'react-router-dom'
 const DynamicSection = () => {
     return (
         <>
@@ -39,7 +40,9 @@ const DynamicSection = () => {
                                         </div>
 
                                         <div className='dynamic-btn'>
-                                            <Button content="Book a Free Demo" style4={true} />
+                                            <Link to='/Visualizer'>
+                                                <Button content="Book a Free Demo" style4={true} />
+                                            </Link>
                                         </div>
 
                                     </div>
