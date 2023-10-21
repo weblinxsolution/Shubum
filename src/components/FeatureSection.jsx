@@ -11,7 +11,7 @@ const FeatureSection = () => {
             <section className=''>
                 <div className="container">
                     <div className="row mx-0 justify-content-center">
-                        <div className="col-lg-6">
+                        <div className="col-lg-8">
                             <h1 className="text-center h1responsive text-capitalize fw-800">
                                 Features you would crave for!
                             </h1>

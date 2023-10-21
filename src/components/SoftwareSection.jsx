@@ -2,6 +2,7 @@ import React from 'react'
 import Building from '../assets/Building.png'
 import check from '../assets/checkmark.png'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 const SoftwareSection = () => {
     return (
         <>
@@ -36,7 +37,9 @@ const SoftwareSection = () => {
                                 </p>
                             </div> */}
                             <div className="mt-4 pt-2">
-                                <Button content="Get Started" style6={true} />
+                                <Link to='/Visualizer'>
+                                    <Button content="Get Started" style6={true} />
+                                </Link>
 
                             </div>
                         </div>

@@ -35,7 +35,7 @@ const PreviewBanner = () => {
     }, []);
     return (
         <>
-            <section className=' bg__concept  me-0 px_0 mt-5'>
+            <section className=' bg__concept  me-0 px_0 mt-5 prev-lap'>
                 <div className=" " style={{
                     // backgroundImage: `linear-gradient(94deg, #3294DB 3.97%, rgba(50, 148, 219, 0.00) 88.85%),url(${qrconcept})`
                 }}>

@@ -66,7 +66,7 @@ const Login = () => {
                                     <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Otp' />
                                 </div>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-4 rounded_btn">
                                 <Link to="/Register" >
                                     <Button responsive100={true} registerbtn={true} content="Register" />
 

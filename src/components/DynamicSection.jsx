@@ -40,7 +40,7 @@ const DynamicSection = () => {
                                         </div>
 
                                         <div className='dynamic-btn'>
-                                            <Link to='/Visualizer'>
+                                            <Link to='/Preview'>
                                                 <Button content="Book a Free Demo" style4={true} />
                                             </Link>
                                         </div>

@@ -63,7 +63,7 @@ const Register = () => {
 
 
 
-                            <div className="mt-4">
+                            <div className="mt-4 rounded_btn">
                                 <Link to="/Dashboard">
                                 <Button responsive100={true} registerbtn={true} content="Register" />
                                 </Link>
