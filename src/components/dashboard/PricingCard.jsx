@@ -10,18 +10,18 @@ const PricingCard = (props) => {
                 <h5 className=" fw-700 mb-4">
                     {props.duration}
                 </h5>
-                <p className='para'>
+                <p className='para-v2'>
                     {props.para}
                 </p>
                 <hr className="text-muted mx-lg-5" />
-                <h4 className="fw-500">
+                <h4 className="fw-600">
                   {props.amount}
                 </h4>
-                <h5 className="mt-4 para fw-500">
+                <h5 className="mt-4 para  fw-500">
                    {props.permonth}
                 </h5>
-                <p className="text-uppercase para small"> {props.plantype} </p>
-                <button className='button'>
+                <p className="text-uppercase para-1 small buy-btn"> {props.plantype} </p>
+                <button className='button color-blue'>
                     Select
 
                 </button>

@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <>
             <div className="wrapper">
-                <section style={{ background: `url(${Bannerbg})` }} className='bg__banner pt-4'>
+                <section style={{ background: `url(${Bannerbg})` }} className='bg__banner pt-4' >
                     <h1 className="text-center text-white fw-900 pt-5">
                         Explore Our Powerful Solutions For
                     </h1>
