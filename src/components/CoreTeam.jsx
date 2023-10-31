@@ -5,7 +5,7 @@ const CoreTeam = () => {
     return (
         <>
             <div className="bg__white3 mt-5 mb-0 pb-5">
-                <div className="container-lg px_0  py-5">
+                <div className="container-lg px_0  pt-5">
                     <h1 className="text-center fw-800">
                         Core Team
                     </h1>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const FreeTrial = () => {
     return (
         <>
-            <section className='container-md px_0 mb-lg-5'>
+            <section className='container-md px_0 mb-lg-5 pb-lg-4 mt-3'>
                 <div className="row mx-0 px_0">
                     <div className="col-lg-12 mt-5 px_0">
                         <div className="bg__trial">

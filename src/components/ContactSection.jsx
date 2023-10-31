@@ -50,7 +50,7 @@ const ContactSection = () => {
                                         </p>
                                         <p className="text__color fw-600 small mb-2">
                                             Plot 511, 2nd Floor, Udyog Vihar Phase 5, Sector-19 Gurugram, Haryana – 122016
-                                            GSTN: 06AAICV7764M1ZJ
+                                            <br /> GSTN: 06AAICV7764M1ZJ
                                         </p>
                                         <hr />
                                         <h3 className="fw-700">

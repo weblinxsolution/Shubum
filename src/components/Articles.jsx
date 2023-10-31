@@ -19,16 +19,16 @@ const Articles = () => {
                                         <h1 className="fw-800">
                                             Latest News and Articles
                                         </h1>
-                                        <p className='text__color mb-0 mt-2 d-lg-block d-none'>
+                                        {/* <p className='text__color mb-0 mt-2 d-lg-block d-none'>
                                             It is a long established fact that a reader will be distracted by the readable <br className="d-lg-block d-none" /> content of a page when looking at its layout
-                                        </p>
+                                        </p> */}
                                     </div>
                                     <div className='d-lg-block d-none'>
                                         <Button content="See More News" style4={true} />
                                     </div>
 
                                 </div>
-                                <div className="row mx-0 mt-lg-5 mt-3 gap-lg-0 gap-4">
+                                <div className="row mx-0 mt-3 gap-lg-0 gap-4">
                                     <div className="col-lg-4 px-lg-0">
                                         <ArticleCard title="Most Innovative Smart Home Tech Startups" para="We’ve ranked the top 101 3D Technology companies in India. The companies, startups and institutions listed in this article are all exceptional companies, well worth a follow." srcimg={Article1} />
                                     </div>

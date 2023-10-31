@@ -38,14 +38,14 @@ const MultipleIndustries = () => {
                     <div className="col-lg-12 col-xxl-12">
                         <div className="row mx-0 gap-lg-0 gap-4 align-items-end ">
                             <div className="col-lg-5">
-                                <h3 className='fw-800 mb-0 text-lg-start text-center'>
+                                <h1 className='fw-800 mb-0 text-lg-start text-center'>
                                     Applicable for multiple industries
-                                </h3>
+                                </h1>
                             </div>
                             <div className="col-lg-7 ">
-                                <p className="text__color small mb-0 text-lg-start text-center ps-lg-3 ">
+                                {/* <p className="text__color small mb-0 text-lg-start text-center ps-lg-3">
                                     Our 360° QR codes go beyond traditional static QR codes by providing interactive and dynamic content to engage customers and enhance user experiences.
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                         <div className='row mx-0 align-items-center gap-lg-0 gap-4'>

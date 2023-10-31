@@ -53,13 +53,13 @@ const Footer = () => {
                                         </div>
                                         <div className="col-lg-3 col-xl">
                                             <div className="fs-5 fw-600 text-white">Project Inquiry </div>
-                                            <Link to="/" className='text-white text-decoration-none d-flex align-items-center gap-1 small mt-4'>
+                                            <a href="tel:7428423300" className='text-white text-decoration-none d-flex align-items-center gap-1 small mt-4'>
                                                 <img src={viber} className='img-fluid me-1' alt="" />
                                                 <span>
-                                                    9876543210
+                                                    7428423300
                                                 </span>
 
-                                            </Link>
+                                            </a>
                                             <Link to="/" className='text-white text-decoration-none d-flex align-items-center gap-1 small mt-3'>
                                                 <img src={mail} className='img-fluid me-1' alt="" />
                                                 <span>
@@ -134,13 +134,13 @@ const Footer = () => {
                                         </div>
                                         <div className="col-lg-3 col-xl  col-6 mb-4">
                                             <div className="fs-6 fw-600 text-white">Project Inquiry </div>
-                                            <Link to="/" className='text-white text-decoration-none d-block small mt-4'>
+                                            <a href="tel:7428423300" className='text-white text-decoration-none d-block small mt-4'>
                                                 <img src={viber} className='iconmails me-1' alt="" />
                                                 <span>
-                                                    9876543210
+                                                    7428423300
                                                 </span>
 
-                                            </Link>
+                                            </a>
                                             <Link to="/" className='text-white text-decoration-none d-block small mt-2'>
                                                 <img src={mail} className='iconmails me-1' alt="" />
                                                 <span>

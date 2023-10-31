@@ -4,7 +4,7 @@ import ExampleCarouselImage2 from './ExampleCarouselImage2';
 const TestimonialSlider2 = () => {
     return (
         <>
-            <div className="container mt-lg-5 pt-lg-3 px_0 carousel2">
+            <div className="container mt-lg-2 pt-lg-3 px_0 carousel2">
                 <div className="row mx-0 justify-content-center">
                     <div className="col-lg-12 pe-lg-4 px_0">
                         <div className="row mx-0">

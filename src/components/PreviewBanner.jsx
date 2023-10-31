@@ -61,8 +61,8 @@ const PreviewBanner = () => {
                                     <img src={qrconcept} className='w-100' alt="" />
                                 </div>
                                 <div className="d-lg-flex d-none gap-4  mt-4 flex-wrap justify-content-lg-start justify-content-center align-items-center">
-                                    <Button key="3" style0={true} content="Enquire Now" />
-                                    <div className="d-lg-block d-none">
+                                    <Button key="3" style0={true} className="preview-btn" content="Enquire Now" />
+                                    <div className="d-lg-block d-none preview-btn">
                                         <Button style0={true} key="0" content={[<img src={Whatsapp} key={4} />, <span className='ms-2' key={6}>Whatsapp</span>]} />
                                     </div>
                                 </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import dynamicbg from '../assets/bgdynamic.png'
-import bgrotate from '../assets/rotate.png'
+import bgrotate from '../assets/360.png'
 import imgdynamic from '../assets/photodynamic.png'
 import qrcode from '../assets/qrcode.png'
 import playbutton from '../assets/play.png'
@@ -23,16 +23,20 @@ const DynamicSection = () => {
                                             <img src={qrcode} className='qrcode' alt="image" />
                                             <div className='qr-box-dts'>
                                                 <h1 className="text-white fw-800">
-                                                    Dynamic <span className='bg__rotate' style={{
+                                                    Dynamic 
+                                                    
+                                                    {/* <span className='bg__rotate' style={{
                                                         background: `url(${bgrotate})`
-                                                    }}>360</span> <br className="d-lg-block d-none" />
+                                                    }}>360</span>  */}
+                                                    <img src={bgrotate} className='px-2' style={{width:100}}  alt="360" />
+                                                    <br className="d-lg-block d-none" />
                                                     QR codes
                                                 </h1>
                                                 <p className='text-white mb-0 d-lg-block d-none'>
-                                                    It is a long established fact that a reader <br className="d-lg-block d-none" /> will be distracted
+                                                    Let customers explore and appreciate the <br className='d-lg-block d-none' /> beauty of your product in a whole new way
                                                 </p>
                                                 <p className="text-white mb-0 fw-600 d-lg-none d-block">
-                                                Let your customers explore and appreciate the beauty of your product in a whole new way
+                                                    Let customers explore and appreciate the beauty of your product in a whole new way
                                                 </p>
 
 

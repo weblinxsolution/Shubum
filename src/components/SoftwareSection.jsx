@@ -7,11 +7,11 @@ const SoftwareSection = () => {
     return (
         <>
             <div className="container">
-                <div className="row mx-0 gap-lg-0 gap-5 mt-5 align-items-center">
+                <div className="row mx-0 gap-lg-0 gap-5 mt-1 align-items-center">
 
                     <div className="col-lg-5 ps-lg-4">
                         <div className="ps-lg-5 text-lg-start text-center">
-                            <h1 className='fw-800'>
+                            <h1 className='fw-800 software-title'>
                                 Introducing 3D <br className="d-lg-block d-none" />
                                 Software Solution
                             </h1>

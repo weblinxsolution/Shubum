@@ -27,7 +27,7 @@ const WhatWeSolving = () => {
 
 
                             </p>
-                            <p className="text-center text__color mb-lg-5">
+                            <p className="text-center text__color">
                                 Our 3D Visualization platform addresses these issues by assisting retailers in expediting the closure of sales leads and enabling customers to make well-informed decisions.
 
 

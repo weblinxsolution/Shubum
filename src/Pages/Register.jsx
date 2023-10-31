@@ -10,62 +10,57 @@ const Register = () => {
     return (
         <>
 
-                <Header />
-            
+            <Header />
+
             <section className='register__Section'>
                 <div className="container">
                     <div className="row mx-0 align-items-center gap-lg-0 gap-5">
-                        <div className="col-lg-6 d-lg-block d-none">
+                        <div className="col-lg-7 d-lg-block d-none">
                             <img src={loginimg} className='w-100' alt="" />
                         </div>
-                        <div className="col-lg-6 mt-lg-0 mt-4">
+                        <div className="col-lg-5 mt-lg-0 mt-4">
                             <h1 className='fw-700 mb-1 text-lg-start text-center'>
                                 Register Here!
                             </h1>
-                            <div className='mt-4'>
-                                <label htmlFor="">Name <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>Name <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' id='tel_input' />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <label htmlFor="">Shop Name <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>Shop Name <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Shop Name' id='tel_input' />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <label htmlFor="">Email <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>Email <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Email' id='tel_input' />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <label htmlFor="">GST Number <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>GST Number <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter GST Number' id='tel_input' />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <label htmlFor="">City <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>City <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter City' id='tel_input' />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <label htmlFor="">State <span className="text-danger">*</span></label>
-                                <div className="form-control width__input  p-3">
-                                    <input type="text" className='nofocus border-0 bg-transparent' placeholder='Enter Name' />
+                            <div className='mt-3'>
+                                <label htmlFor="" className='mb-1'>State <span className="text-danger">*</span></label>
+                                <div className="form-control  p-3 p-laptop">
+                                    <input type="text" className='nofocus border-0 bg-transparent border-left-0' placeholder='Enter State' id='tel_input' />
                                 </div>
                             </div>
-
-
-
-
-
-                            <div className="mt-4 rounded_btn">
+                            <div className="mt-3 rounded_btn">
                                 <Link to="/Dashboard">
-                                <Button responsive100={true} registerbtn={true} content="Register" />
+                                    <Button responsive100={true} registerbtn={true} content="Register" />
                                 </Link>
 
                             </div>

@@ -11,9 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsServiceDropdownOpen(true);
-  };
 
   const handleToggleDropdown = () => {
     setIsServiceDropdownOpen(!isServiceDropdownOpen);
@@ -21,22 +18,17 @@ const Header = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-transparent pt-3">
-        <Container>
+      <Navbar expand="lg" className="bg-transparent pt-3 px-0">
+        <div className='wrapper d-flex flex-wrap justify-content-between'>
           <div className="d-lg-none d-block"></div>
           <Navbar.Brand to="/" as={Link}>
-            <img src={Logo} className='logo ms-lg-0 ms-5' alt="" />
+            <img src={Logo} className='logo ms-lg-0' alt="" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle className='ms-auto' aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="#home" as={Link} to="/About">About</Nav.Link>
-              <NavDropdown
-                title="Service"
-                id="basic-nav-dropdown"
-                show={isServiceDropdownOpen}
-                onMouseEnter={handleMouseEnter}
-              >
+              <Nav.Link href="#home" as={Link} to="/About">About </Nav.Link>
+              <NavDropdown title="Service" id="basic-nav-dropdown" className='service_dropdown'>
                 <NavDropdown.Item as={Link} to="/Visualizer">
                   3D Visualizer
                 </NavDropdown.Item>
@@ -59,7 +51,7 @@ const Header = () => {
               <Button style1={true} content="Get Started" />
             </Link>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </>
   );

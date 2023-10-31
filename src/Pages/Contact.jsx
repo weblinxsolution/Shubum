@@ -10,8 +10,6 @@ const Contact = () => {
             <Header />
             <BannerContact />
             <ContactSection />
-
-
             <Footer />
 
         </>
