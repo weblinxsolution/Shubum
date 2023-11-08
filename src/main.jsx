@@ -14,6 +14,10 @@ import Dashboard from './Pages/Dashboard.jsx';
 import Pricing from './Pages/Pricing.jsx';
 import Upload from './Pages/Upload.jsx';
 import axios from 'axios';
+import LandingDashboard from './components/dashboard/LandingDashboard.jsx';
+import Retail from './components/dashboard/Retail.jsx';
+import Brand from './components/dashboard/Brand.jsx';
+import Customer from './components/dashboard/Customer.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -105,6 +109,22 @@ function App() {
       path: "/Upload",
       element: <Upload />,
     },
+    {
+      path: "/landing",
+      element: <LandingDashboard />,
+    },
+    {
+      path: "/dashboard/retailer",
+      element: <Retail />,
+    },
+    {
+      path: "/dashboard/brand",
+      element: <Brand/>,
+    },
+    {
+      path: "/dashboard/customer",
+      element: <Customer />,
+    },
     // ... other route configurations ...
   ]);
 
@@ -113,7 +133,7 @@ function App() {
 
       {data == 1 ?
         (<RouterProvider router={router} />)
-        : "error 404"
+        : ""
       }
     </React.StrictMode>
   );

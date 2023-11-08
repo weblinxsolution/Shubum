@@ -52,8 +52,8 @@ const DynamicSection = () => {
                                     </div>
                                     <div className="position-relative h_100 ">
                                         {/* <img src={imgdynamic} alt="" className='img__dynamic' /> */}
-                                        {/* <iframe className='img__dynamic' allowfullscreen style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg"></iframe> */}
-                                        <iframe className='img__dynamic' allowfullscreen style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg&autoLoad=true"></iframe>
+                                        {/* <iframe className='img__dynamic' allowFullScreen style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg"></iframe> */}
+                                        <iframe className='img__dynamic' allowFullScreen style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg&autoLoad=true"></iframe>
                                         <div className="supercustom__div">
                                             {/* <img src={playbutton} alt="" /> */}
                                             <div>
