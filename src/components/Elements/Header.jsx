@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import Button from '../Button';
 import { NavDropdown } from 'react-bootstrap';
@@ -37,7 +37,7 @@ const Header = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#link" as={Link} to="/">Pricing</Nav.Link>
-              <Nav.Link href="#link" as={Link} to="/">Learn</Nav.Link>
+              <NavLink to='/landing' className='nav-link'>Learn More</NavLink>
               <Nav.Link
                 onClick={handleToggleDropdown}
                 href="#link"
