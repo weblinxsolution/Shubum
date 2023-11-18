@@ -91,6 +91,7 @@
     color: #2F2F2F;
     font-weight: 700;
 }
+
 .rt_full {
     border-radius: 7px;
     border: 1px solid #27AE60;
@@ -101,9 +102,11 @@
     color: #fff;
     font-weight: 700;
 }
-#dropdown-basic-button::after{
+
+#dropdown-basic-button::after {
     display: none;
 }
+
 @media(max-width:1527.27px) {
     .mobile-img {
         height: 140px !important;
@@ -117,6 +120,22 @@
 }
 
 @media(max-width:600px) {
+    .btn_customer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn_brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn_retail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .download-img img {
         width: 29%;
     }
