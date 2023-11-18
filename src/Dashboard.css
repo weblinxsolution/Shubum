@@ -120,16 +120,18 @@
 }
 
 @media(max-width:600px) {
-    .btn_customer{
+    .btn_customer {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .btn_brand{
+
+    .btn_brand {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .btn_retail {
         display: flex;
         align-items: center;
