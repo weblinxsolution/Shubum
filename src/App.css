@@ -894,8 +894,7 @@ div[aria-labelledby="dropdown-basic-button"] {
 
 .custom-border {
   position: relative;
-  display: flex;
-  justify-content: center;
+ 
 }
 
 .custom-border::before {
@@ -906,7 +905,6 @@ div[aria-labelledby="dropdown-basic-button"] {
   left: 0;
   width: 1px;
   height: 100%;
-
 }
 .trusted-bg{
   background-color: #FFF6F8;
@@ -1303,6 +1301,9 @@ div[aria-labelledby="dropdown-basic-button"] {
 }
 
 @media (max-width:991px) {
+  .custom-border::before {
+    display: none;
+   }
   .Login__Section {
     display: flex;
     background: none;
