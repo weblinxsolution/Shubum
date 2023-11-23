@@ -226,16 +226,17 @@ const Retail = () => {
                 <div>
 
                     <div className="brand__div brand__div-1 w-100">
-                        <div className="d-flex flex-row  mb-lg-0 mb-md-4 align-items-center  justify-content-center  brand__div-inner">
+                    <p className="text-center mb-3 fw-700 fs-1 fs__6 mt-lg-2" style={{ color: '#2F2F2F' }}>
+                            +40 Tiles and Laminate Brands
+                        </p>
+                        <div className="d-flex flex-row  mb-lg-3 mb-md-4 align-items-center  justify-content-center  brand__div-inner1">
                             <img src={homeimg} className='' alt="" />
                             <img src={stylevinta} className='' alt="" />
                             <img src={brandimg} className='' alt="" />
                             <img src={natureimg} className='' alt="" />
                             <img src={classicimg} className='' alt="" />
                         </div>
-                        <p className="text-center mb-0 fw-700 fs-5 fs__6 mt-lg-2" style={{ color: '#5D5D5D' }}>
-                            +40 Tiles and Laminate Brands
-                        </p>
+                        
 
                     </div>
 
