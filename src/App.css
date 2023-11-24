@@ -287,6 +287,7 @@ div[aria-labelledby="dropdown-basic-button"] {
   width: 10% !important;
   margin: auto;
 }
+
 .brand__div-inner img:nth-child(5) {
   width: 10%;
 }
@@ -875,7 +876,7 @@ div[aria-labelledby="dropdown-basic-button"] {
 
 .Brand:hover {
   border-radius: 11px;
-  border: 2px solid #2A91D6;
+  border-color: #2A91D6;
   background: #FFF;
   box-shadow: 1px 7px 31px 2px rgba(56, 128, 217, 0.09);
   padding: .5rem 1rem;
@@ -883,10 +884,14 @@ div[aria-labelledby="dropdown-basic-button"] {
 
 .Brand {
   border-radius: 11px;
-  border: 1px solid #D2D2D2;
+  border: 2px solid #D2D2D2;
   background: #FFF;
   box-shadow: 1px 7px 31px 2px rgba(56, 128, 217, 0.09);
   padding: .5rem 1rem;
+}
+
+.choose_plan:checked+.Brand {
+  border-color: #2A91D6;
 }
 
 .btn-blue button {
@@ -902,7 +907,7 @@ div[aria-labelledby="dropdown-basic-button"] {
 
 .custom-border {
   position: relative;
- 
+
 }
 
 .custom-border::before {
@@ -914,14 +919,51 @@ div[aria-labelledby="dropdown-basic-button"] {
   width: 1px;
   height: 100%;
 }
-.trusted-bg{
+
+.trusted-bg {
   background-color: #FFF6F8;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.brand__div-1{
+
+.brand__div-1 {
   border-radius: 0;
 }
+
+.choose-input {
+  display: flex;
+  border-radius: 11px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+  box-shadow: 1px 7px 31px 2px rgba(56, 128, 217, 0.09);
+  margin-bottom: 15px;
+  align-items: center;
+  padding: 0px 15px;
+  gap: 10px;
+}
+
+.choose-input input {
+  padding: 15px 0px;
+  width: 100%;
+  border-color: transparent;
+}
+
+.choose-input input:focus {
+  outline: 0;
+}
+
+.choose-input svg {
+  fill: #808080;
+}
+
+.choose-input svg path {
+  fill: #808080;
+}
+
+.choose-row {
+  width: 90%;
+}
+
 @media(max-width:1527.27px) {
   .bg__concept::after {
     content: '';
@@ -1311,7 +1353,8 @@ div[aria-labelledby="dropdown-basic-button"] {
 @media (max-width:991px) {
   .custom-border::before {
     display: none;
-   }
+  }
+
   .Login__Section {
     display: flex;
     background: none;
@@ -1887,6 +1930,11 @@ div[aria-labelledby="dropdown-basic-button"] {
 }
 
 @media(max-width:991px) {
+
+  .choose-row {
+    width: 100%;
+  }
+
   .wrapper {
     width: 90%;
     margin: auto;

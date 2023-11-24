@@ -120,7 +120,7 @@ function App() {
     },
     {
       path: "/dashboard/brand",
-      element: <Brand/>,
+      element: <Brand />,
     },
     {
       path: "/dashboard/customer",
