@@ -269,8 +269,7 @@ div[aria-labelledby="dropdown-basic-button"] {
 
 .brand__div {
   background-color: var(--ltblue);
-
-  margin-top: 180px;
+  /* margin-top: 180px; */
   padding: 20px 30px;
   width: 90%;
   margin-left: auto;
@@ -1174,7 +1173,7 @@ div[aria-labelledby="dropdown-basic-button"] {
   }
 
   .brand__div {
-    margin-top: 266px !important;
+    /* margin-top: 266px !important; */
   }
 
   .visbg {
@@ -1279,7 +1278,7 @@ div[aria-labelledby="dropdown-basic-button"] {
   }
 
   .brand__div {
-    margin-top: 166px;
+    /* margin-top: 166px; */
     width: 100%;
     padding: 20px 20px !important;
   }
@@ -1406,7 +1405,7 @@ div[aria-labelledby="dropdown-basic-button"] {
   }
 
   .brand__div {
-    margin-top: 126px;
+    /* margin-top: 126px; */
     width: 100%;
     padding: 20px 20px !important;
   }
@@ -1768,7 +1767,7 @@ div[aria-labelledby="dropdown-basic-button"] {
 
   .brand__div {
     background-color: var(--ltblue);
-    margin-top: 94px;
+    margin-top: 120px !important;
     padding: 40px 20px;
     width: 90%;
     margin-left: auto;
@@ -1787,7 +1786,6 @@ div[aria-labelledby="dropdown-basic-button"] {
   }
 
 }
-
 
 @media (max-width:415px) {
   .supercustom__div {
@@ -1939,4 +1937,17 @@ div[aria-labelledby="dropdown-basic-button"] {
     width: 90%;
     margin: auto;
   }
+}
+
+.customColor {
+  background-color: #FFF6F8;
+}
+
+.active {
+  border-color: #2A91D6 !important;
+}
+
+.customMargin {
+  height: 50px !important;
+  background-color: #FFF6F8 !important;
 }

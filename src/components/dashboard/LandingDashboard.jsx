@@ -9,58 +9,22 @@ import classicimg from '../../assets/RAK.png'
 import { useNavigate } from 'react-router-dom';
 
 const LandingDashboard = () => {
-    const [submit, setSubmit] = useState('')
+    var [submit, setSubmit] = useState('/brand')
 
     const navigate = useNavigate();
 
     function handleSubmit() {
         navigate('/dashboard' + submit);
     }
+
+    const [selectedRadio, setSelectedRadio] = useState(1);
+
+    const checkRadio = (e) => {
+        setSelectedRadio(e);
+    }
     return (
         <>
-            {/* // <div className='d-flex align-items-center justify-content-center vh-100'>
-        //     <div className='col-xxl-4 col-xl-5 col-lg-6 landing_page shadow border'>
-        //         <div className='landing_header d-flex justify-content-center overflow-hidden' style={{ backgroundImage: `url('${bg_blue}')` }}>
-        //             <div className='py-4 text-white px-4'>
-        //                 <h5 className='mb-0 text-uppercase fw-bold'>India’s Best 3D Visualization Software</h5>
-        //                 <p className='mb-0 small'>Introducing our cutting-edge 3D Tile Visualizer, a powerful tool that <br className='d-lg-block d-none' /> empowers you to create stunning designs using the tiles of your choice.</p>
-        //             </div>
-        //         </div>
-        //         <div className='landing_content position-relative'>
-        //             <img src={video1} className='img-fluid w-100' alt="image" />
-        //             <div className='text-center'>
-        //                 <svg xmlns="http://www.w3.org/2000/svg" className='cursor' width="60" height="60" viewBox="0 0 100 100" fill="none">
-        //                     <circle cx="50" cy="50" r="50" fill="black" fillOpacity="0.29" />
-        //                     <path fillRule="evenodd" clipRule="evenodd" d="M73.1262 52.0554L55.9431 61.976L38.7599 71.8966L35.1978 73.9532V69.8413V50V30.1587V26.0468L38.7599 28.1034L55.9431 38.024L73.1262 47.9446L76.6861 50L73.1262 52.0554ZM50 0C36.1933 0 23.6931 5.59663 14.6448 14.6448C5.59663 23.6931 0 36.1933 0 50C0 63.8067 5.59663 76.3069 14.6448 85.3552C23.6931 94.4034 36.1933 100 50 100C63.8067 100 76.3069 94.4034 85.3552 85.3552C94.4034 76.3069 100 63.8067 100 50C100 36.1933 94.4034 23.6931 85.3552 14.6448C76.3069 5.59663 63.8067 0 50 0ZM81.9883 18.0117C73.802 9.8254 62.4923 4.7619 50 4.7619C37.5077 4.7619 26.198 9.8254 18.0117 18.0117C9.8254 26.198 4.7619 37.5075 4.7619 50C4.7619 62.4923 9.8254 73.802 18.0117 81.9883C26.198 90.1746 37.5077 95.2381 50 95.2381C62.4923 95.2381 73.802 90.1746 81.9883 81.9883C90.1746 73.802 95.2381 62.4923 95.2381 50C95.2381 37.5075 90.1746 26.198 81.9883 18.0117Z" fill="white" />
-        //                 </svg>
-        //                 <p className='mt-4'>
-        //                     <span>Create beautiful designs with your</span> <br className='d-lg-block d-none' />
-        //                     <span>selected tiles and laminates</span>
-        //                 </p>
-        //             </div>
-        //         </div>
-        //         <div className='landing_footer p-lg-4 p-3'>
-        //             <h5 className='fw-bold'>Which of these are you?</h5>
-        //             <div className='landing_footer_btn mt-4 d-flex gap-3 justify-content-center align-items-center'>
-        //                 <NavLink to='/dashboard/retailer' href="#link"
-        //                     as={Link} className='btn_retail'>
-        //                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 28" fill="none">
-        //                         <path fillRule="evenodd" clipRule="evenodd" d="M8.80203 4.86747C8.92961 3.98157 9.31552 3.146 9.95977 2.36077C10.4142 1.68249 11.0185 1.11781 11.726 0.71037C12.4335 0.302933 13.2252 0.0636643 14.0399 0.0110626C14.8546 -0.0415391 15.6705 0.0939365 16.4246 0.407013C17.1786 0.72009 17.8505 1.20238 18.3883 1.8166C19.2855 1.99411 19.8654 2.60827 20.1281 3.65909C20.3426 4.51718 20.3254 5.69371 20.0765 7.18869C20.5859 7.4316 20.7923 7.90461 20.6955 8.60771C20.612 9.21366 20.2241 10.0264 19.5315 11.0461C19.4187 12.2947 18.8423 13.4557 17.9158 14.3003C16.9893 15.1449 15.78 15.6118 14.5264 15.6089C13.2727 15.6061 12.0656 15.1337 11.1429 14.2849C10.2203 13.4361 9.64912 12.2725 9.54196 11.0234C8.92024 9.96119 8.56874 9.11535 8.48747 8.48587C8.44444 8.21174 8.46629 7.93134 8.55126 7.66718C8.63272 7.42359 8.79012 7.21252 9.00035 7.06496C8.76989 6.35666 8.7021 5.60551 8.80203 4.86739V4.86747ZM10.0697 15.3829C9.99206 15.2432 9.86208 15.1401 9.70837 15.0962C9.55467 15.0524 9.38984 15.0713 9.25015 15.149C9.23654 15.1566 9.22324 15.1647 9.21039 15.1732V15.1727C8.09009 15.9285 6.90609 16.5852 5.6718 17.1355C4.57624 17.6109 3.54223 17.9213 2.56976 18.0666C2.49486 18.0774 2.42268 18.1023 2.35701 18.1399C1.51501 18.5285 0.841286 19.2076 0.459337 20.0526C0.0775058 20.8848 -0.066273 21.9095 0.0280008 23.1266L0.0295124 23.1433C0.0410762 23.452 0.11968 25.4787 0.261846 27.4378C0.272612 27.5902 0.340745 27.7329 0.452512 27.837C0.564279 27.9412 0.711372 27.9991 0.864145 27.9991V28H28.3177C28.476 28 28.628 27.938 28.7411 27.8271C28.8541 27.7163 28.9192 27.5655 28.9223 27.4072C29.0659 25.4169 29.1442 23.3663 29.1531 23.1265H29.154C29.2483 21.9094 29.1045 20.8848 28.7226 20.0525C28.3334 19.192 27.6424 18.5039 26.7802 18.1184C26.727 18.0935 26.6705 18.0765 26.6124 18.068V18.0665C24.6589 17.7747 22.4454 16.8101 19.9717 15.1726C19.8383 15.0843 19.6752 15.0526 19.5184 15.0845C19.3616 15.1164 19.2239 15.2092 19.1356 15.3427C19.1291 15.3525 19.123 15.3625 19.1171 15.3725L14.3839 23.1071L10.0697 15.3829Z" fill="white" />
-        //                     </svg> Retailer</NavLink>
-        //                 <NavLink to='/dashboard/brand' as={Link} className='btn_brand'><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 28" fill="none">
-        //                     <path d="M17.0594 12.2432C17.0594 9.59478 14.9047 7.44006 12.2562 7.44006C5.89291 7.68155 5.8946 16.8059 12.2563 17.0464C14.9047 17.0464 17.0594 14.8917 17.0594 12.2432Z" fill="#A9ACAA" />
-        //                     <path d="M12.2554 17.0465C7.49333 17.0465 3.61914 20.9208 3.61914 25.6828C3.61914 26.9941 4.68895 28.0001 5.93638 28.0001H18.5745C19.8223 28.0001 20.8918 26.9938 20.8918 25.6828C20.8918 20.9208 17.0176 17.0465 12.2554 17.0465Z" fill="#A9ACAA" />
-        //                     <path d="M12.255 3.51543C6.04652 3.41918 1.66649 10.1746 4.2839 15.799C4.46847 16.2126 4.95347 16.3983 5.36711 16.2138C5.78081 16.0292 5.96657 15.5441 5.78196 15.1304C3.65786 10.5633 7.21286 5.07752 12.2551 5.15605C17.2965 5.07774 20.8531 10.5635 18.728 15.1305C18.5435 15.5441 18.7292 16.0291 19.143 16.2137C19.7065 16.4651 20.121 16.035 20.2264 15.7989C22.8425 10.1745 18.4644 3.41885 12.255 3.51543Z" fill="#A9ACAA" />
-        //                     <path d="M12.2558 0.000996505C2.92331 -0.117616 -3.13452 10.4937 1.70951 18.459C1.94001 18.8489 2.44328 18.9779 2.83297 18.7472C3.22293 18.5166 3.35199 18.0135 3.12133 17.6236C-1.07031 10.7266 4.17446 1.53793 12.256 1.64167C20.3364 1.53853 25.5831 10.7267 21.3902 17.6237C21.1597 18.0135 21.2888 18.5166 21.6787 18.7472C22.1253 19.0115 22.609 18.7857 22.8023 18.4589C27.6449 10.4935 21.5893 -0.118272 12.2558 0.000996505Z" fill="#A9ACAA" />
-        //                 </svg> Brand</NavLink>
-        //                 <NavLink to='/dashboard/customer' as={Link} className='btn_customer'><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 28" fill="none">
-        //                     <path d="M11.5038 13.4876C13.3567 13.4876 14.9613 12.8231 16.2723 11.5118C17.5832 10.2008 18.2478 8.59677 18.2478 6.7436C18.2478 4.89108 17.5832 3.28678 16.272 1.97536C14.9608 0.664576 13.3565 0 11.5038 0C9.65063 0 8.04654 0.664576 6.73555 1.97557C5.42456 3.28657 4.75977 4.89086 4.75977 6.7436C4.75977 8.59677 5.42456 10.2011 6.73576 11.5121C8.04697 12.8228 9.65127 13.4876 11.5038 13.4876Z" fill="#A9ACAA" />
-        //                     <path d="M23.3037 21.5305C23.2659 20.9849 23.1895 20.3897 23.0769 19.7613C22.9632 19.1281 22.8169 18.5295 22.6417 17.9824C22.4608 17.417 22.2147 16.8586 21.9105 16.3235C21.5948 15.768 21.2239 15.2844 20.8078 14.8864C20.3726 14.4701 19.8399 14.1353 19.2238 13.8912C18.6098 13.6483 17.9295 13.5252 17.2017 13.5252C16.9158 13.5252 16.6394 13.6425 16.1056 13.9901C15.777 14.2043 15.3927 14.4521 14.9638 14.7262C14.597 14.9599 14.1001 15.1789 13.4863 15.3771C12.8876 15.5709 12.2796 15.6691 11.6795 15.6691C11.0795 15.6691 10.4717 15.5709 9.8723 15.3771C9.25921 15.1791 8.76232 14.9601 8.39596 14.7264C7.97107 14.4549 7.58655 14.2071 7.25309 13.9899C6.71989 13.6423 6.44325 13.525 6.15742 13.525C5.4294 13.525 4.74923 13.6483 4.1355 13.8914C3.51984 14.1351 2.98685 14.4699 2.55128 14.8866C2.13536 15.2848 1.7643 15.7683 1.44899 16.3235C1.14501 16.8586 0.898919 17.4168 0.717768 17.9827C0.542812 18.5297 0.396481 19.1281 0.282835 19.7613C0.170256 20.3889 0.0937798 20.9843 0.0559688 21.5311C0.0187987 22.0669 0 22.6229 0 23.1846C0 24.6462 0.464627 25.8294 1.38085 26.702C2.28575 27.5632 3.4831 28 4.93914 28H18.4212C19.8773 28 21.0742 27.5634 21.9793 26.702C22.8957 25.83 23.3604 24.6466 23.3604 23.1843C23.3601 22.6202 23.3411 22.0637 23.3037 21.5305Z" fill="#A9ACAA" />
-        //                 </svg> Customer</NavLink>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div > */}
+
             <section className='landing__Page'>
                 {/* Only Logo NavBar */}
                 <nav className="navbar navbar-expand-lg navbar-light">
@@ -114,7 +78,6 @@ const LandingDashboard = () => {
                                         Create automatic designs in pre-designed rooms
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <div className="col-lg-6 mt-lg-0 mt-5 custom-border d-flex justify-contentlg-center">
@@ -125,7 +88,7 @@ const LandingDashboard = () => {
                                     </h3>
                                 </div>
                                 <div className="chose-your-hobby col-lg-11 mt-4">
-                                    <div className="Brand d-flex align-items-center justify-content-between mt-3">
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 1 ? 'active' : ''}`} onClick={() => checkRadio(1)}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="40" viewBox="0 0 39 40" fill="none">
@@ -137,10 +100,10 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio" type="radio" onChange={() => setSubmit('/brand')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r1" checked={selectedRadio === 1} type="radio" onChange={() => setSubmit('/brand')} name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
-                                    <div className="Brand d-flex align-items-center justify-content-between mt-3">
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 2 ? 'active' : ''}`} onClick={() => checkRadio(2)}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="40" viewBox="0 0 32 40" fill="none">
@@ -152,10 +115,10 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio" type="radio" onChange={() => setSubmit('/retailer')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r2" checked={selectedRadio === 2} type="radio" onChange={() => setSubmit('/retailer')} name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
-                                    <div className="Brand d-flex align-items-center justify-content-between mt-3">
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 3 ? 'active' : ''}`} onClick={() => checkRadio(3)}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="35" viewBox="0 0 40 35" fill="none">
@@ -172,13 +135,16 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio" type="radio" onChange={() => setSubmit('/customer')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r3" checked={selectedRadio === 3} type="radio" onChange={() => setSubmit('/customer')} name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
                                     <div className="btn-blue d-flex justify-content-center w-100 mt-3">
                                         <button className='w-50' onClick={handleSubmit}>
                                             Submit
                                         </button>
+                                        {/* <button className='w-50'>
+                                            Submit
+                                        </button> */}
                                     </div>
                                 </div>
                             </div>
@@ -193,11 +159,14 @@ const LandingDashboard = () => {
                         </h2>
                     </div>
                 </div>
-                <div>
-                    <img src={washroom} className='w-100' alt="" />
+                <div className='container-fluid customColor'>
+                    <div className='container'>
+                        <iframe className='img__dynamic' style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg&autoLoad=true"></iframe>
+                    </div>
+                </div>
+                <div className="customMargin">
                 </div>
                 <div>
-
                     <div className="brand__div brand__div-1 w-100">
                         <p className="text-center mb-3 fw-700 fs-1 fs__6 mt-lg-2" style={{ color: '#2F2F2F' }}>
                             +40 Tiles and Laminate Brands
