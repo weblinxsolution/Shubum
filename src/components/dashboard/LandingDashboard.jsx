@@ -9,7 +9,7 @@ import classicimg from '../../assets/RAK.png'
 import { useNavigate } from 'react-router-dom';
 
 const LandingDashboard = () => {
-    var [submit, setSubmit] = useState('/brand')
+    var [submit, setSubmit] = useState('')
 
     const navigate = useNavigate();
 

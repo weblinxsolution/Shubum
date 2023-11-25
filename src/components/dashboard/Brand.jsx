@@ -181,8 +181,12 @@ const Brand = () => {
                         </h2>
                     </div>
                 </div>
-                <div>
-                    <img src={washroom} className='w-100' alt="" />
+                <div className='container-fluid customColor'>
+                    <div className='container'>
+                        <iframe className='img__dynamic' style={{ borderStyle: "none" }} src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//visualez-storage.s3.ap-south-1.amazonaws.com/cloudrender/360views/646f3c7f1bb0ec473e7e9692_gv002_0000.jpg&autoLoad=true"></iframe>
+                    </div>
+                </div>
+                <div className="customMargin">
                 </div>
                 <div>
 
