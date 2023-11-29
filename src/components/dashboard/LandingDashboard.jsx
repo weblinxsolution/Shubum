@@ -9,7 +9,7 @@ import classicimg from '../../assets/RAK.png'
 import { useNavigate } from 'react-router-dom';
 
 const LandingDashboard = () => {
-    var [submit, setSubmit] = useState('')
+    var [submit, setSubmit] = useState('/brand')
 
     const navigate = useNavigate();
 
@@ -88,7 +88,7 @@ const LandingDashboard = () => {
                                     </h3>
                                 </div>
                                 <div className="chose-your-hobby col-lg-11 mt-4">
-                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 1 ? 'active' : ''}`} onClick={() => checkRadio(1)}>
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 1 ? 'active' : ''}`} onClick={() => { checkRadio(1), setSubmit('/brand') }}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="40" viewBox="0 0 39 40" fill="none">
@@ -100,10 +100,10 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio r1" checked={selectedRadio === 1} type="radio" onChange={() => setSubmit('/brand')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r1" checked={selectedRadio === 1} type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
-                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 2 ? 'active' : ''}`} onClick={() => checkRadio(2)}>
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 2 ? 'active' : ''}`} onClick={() => { checkRadio(2), setSubmit('/retailer') }}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="40" viewBox="0 0 32 40" fill="none">
@@ -115,10 +115,10 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio r2" checked={selectedRadio === 2} type="radio" onChange={() => setSubmit('/retailer')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r2" checked={selectedRadio === 2} type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
-                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 3 ? 'active' : ''}`} onClick={() => checkRadio(3)}>
+                                    <div className={`Brand d-flex align-items-center justify-content-between mt-3 ${selectedRadio == 3 ? 'active' : ''}`} onClick={() => { checkRadio(3), setSubmit('/customer') }}>
                                         <div className='d-flex align-items-center gap-2'>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="35" viewBox="0 0 40 35" fill="none">
@@ -135,7 +135,7 @@ const LandingDashboard = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <input className="form-check-input input-radio r3" checked={selectedRadio === 3} type="radio" onChange={() => setSubmit('/customer')} name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <input className="form-check-input input-radio r3" checked={selectedRadio === 3} type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                         </div>
                                     </div>
                                     <div className="btn-blue d-flex justify-content-center w-100 mt-3">
